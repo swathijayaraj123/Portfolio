@@ -3,12 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   const [project, setProject] = useState("");
   const [firstLoad, setfirstLoad] = useState(true);
-
+ 
   const click = () => {
-    console.log("currect value is " + project);
+
     const element = document.getElementById(project);
-    console.log("here");
-    console.log(element);
     element.click();
     setProject("");
   };
@@ -23,6 +21,7 @@ const Header = () => {
   }, [project]);
 
   return (
+    <div>
     <nav className="sm:p-5 border-2 border-black rounded-lg  sm:mx-20 sm:my-5 flex flex-wrap justify-around">
       <div>
         <div className=" text-4xl font-serif font-extrabold  text-center">
@@ -30,8 +29,9 @@ const Header = () => {
         </div>
         <p className="text-blue-900 font-light text-xl">Web Developer</p>
       </div>
+   
 
-      <ul className=" relative top-4">
+      <ul className=" relative top-4 ">
         <NavLink
           to=""
           className={({ isActive }) =>
@@ -67,15 +67,6 @@ const Header = () => {
         >
           Password Generator
         </NavLink>
-
-        <NavLink
-          to='dynamicformgenerator'
-          className={(isActive)=>{
-            `${
-              isActive ? "text-orange-500" : "text-gray-700"
-            }  m-6 hidden text-gray-700 font-serif text-xl hover:text-orange-500 `
-          }}
-        >Dynamic form generator</NavLink>
         
      
         <select
@@ -95,10 +86,8 @@ const Header = () => {
         </select>
 
       </ul>
-      <button className=" px-6 rounded-xl border-2 border-orange-600 bg-gradient-to-r from-pink-700 to-orange-500 ">
-        Contact Me
-      </button>
     </nav>
+    </div>
   );
 };
 

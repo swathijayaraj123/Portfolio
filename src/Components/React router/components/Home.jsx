@@ -2,6 +2,7 @@ import React from "react";
 import first from "../../../public/women-web-developer-with-laptop.svg";
 import skills from "../../../public/skills.jpg";
 import js from "../../../public/js.png";
+import udemy from '../../../public/udemy.jpg'
 const Home = () => {
   console.log(first);
   return (
@@ -50,7 +51,7 @@ const Home = () => {
                 <p className="text-2xl m-2">✅ CSS3</p>
                 <p className="text-2xl m-2">✅ MongoDB</p>
                 <p className="text-2xl m-2">✅ NodeJS</p>
-                <p className="text-2xl m-2">👉 MERN Stack</p>
+                <p className="text-2xl m-2">✅  MERN Stack</p>
                 <p className="text-2xl m-2">✅ Git/Github</p>
                 <p className="text-2xl m-2">✅ Figma</p>
                 
@@ -59,6 +60,11 @@ const Home = () => {
               
 
           <img src={skills} className="sm:w-1/2 w-full" alt="" />
+        </div>
+
+        <div className="min-h-screen min-w-screen bg-blue-950 pb-5 mt-10">
+            <h1 className="text-center text-white sm:text-5xl text-2xl p-5 font-extrabold font-serif ">See Certifications</h1>
+            <img src={udemy}  className='sm:w-1/2 w-11/12 mx-auto rounded-lg ' alt="udemy certificate" />
         </div>
       </div>
     </div>
