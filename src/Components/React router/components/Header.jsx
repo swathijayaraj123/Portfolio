@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <div>
-    <nav className="sm:p-5 border-2 border-black rounded-lg  sm:mx-20 sm:my-5 flex flex-wrap justify-around">
+    <nav className="sm:p-5  rounded-lg p-2 sm:mx-20 sm:my-5 flex flex-wrap justify-around">
       <div>
         <div className=" text-4xl font-serif font-extrabold  text-center">
           Swathi
